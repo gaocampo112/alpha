@@ -1,0 +1,884 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,500;1,700&display=swap');
+
+*{ /*para que el navegador no me ponga margenes*/
+    margin: 0; /*Del borde hacia afuera*/
+    padding: 0; /*Del contendio al borde*/
+}
+
+/*---------------INDEX---------------*/
+
+/*---------------HEADER---------------*/
+
+header /*Fondo header*/
+{
+    background-color: rgb(250, 166, 50); 
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content:left;
+    align-items: center;
+}
+
+.logo img /*Logo*/
+{
+    width: 80px;
+    height: 80px;
+    margin: 20px;
+}
+
+.titulo /*ID Titulo*/
+{
+    color: rgb(253, 253, 253); /*Color*/
+    font-size: 50px; /*Tamano de letra*/
+    font-weight: 500px; /*Negrita*/
+    font-style:normal; /*Estilo de letra*/
+    font-family: 'Rubik', sans-serif; /*Tipografia*/
+    letter-spacing: 10px;/*Espacio entre letras*/
+    line-height: 100px; /*Separa entre linea y linea*/
+    text-align: center; /*posicion del texto*/
+    background-color: rgba(56, 56, 56, 0.882);
+}
+
+#subtitulo /*ID Subtitulo*/
+{
+    color: white;
+    font-size: 25px; 
+    font-family: 'Rubik', sans-serif; 
+    letter-spacing: 6px;
+    text-align: center;
+    background-color: rgba(56, 56, 56, 0.882);
+}
+
+header nav ul li a /*Enlaces lista Menu*/
+{
+    text-decoration:none;/*Decoracion en la letra*/
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 900;
+}
+
+header nav ul /*Lista Menu*/
+{
+    list-style:none; /*Estilo de lista (el punto)*/
+    display: flex;
+    
+}
+
+header nav ul li /*Opciones Menu*/
+{
+    margin: 25px;
+    margin-bottom: 30px;
+    transition: 0.3s;
+}
+
+.boton:hover /*Hover nav*/
+{
+    transform:scale(1.1);
+}
+
+/*---------------MAIN---------------*/
+
+body /*Tipo fuente body*/
+{
+    font-family: 'Rubik', sans-serif; 
+}
+
+main /*Fondo del main*/
+{
+    background-color: rgba(56, 56, 56, 0.882);
+}
+
+.hero/*class*//*Banner*/
+{
+    width: 100%;
+    height: 45vh;
+    background-image: url("../img/banner.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.loMasVendido /*Seccion lo mas vendido*/
+{
+    text-align: center;
+}
+
+.loMasVendido h2 /*Lo mas vendido titulo*/
+{
+    margin-top: 25px;
+    color: black;
+    background-color:  rgb(250, 166, 50);;
+    padding: 4px;
+}
+
+.loMasVendido div /*Flex section lo mas vendido*/
+{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.loMasVendido div div /*Box lo mas vendido*/
+{
+    width: 300px;
+    height: 500px;
+    border: 4px solid rgb(0, 0, 0); /*Para crear el borde de la caja*/
+    margin: 30px;
+    text-align: center;
+    line-height: 37px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    letter-spacing: 2px;
+    flex-direction: column;
+}
+
+.loMasVendido div div a /*Boton lo mas vendido*/
+{
+    text-decoration: none;
+    background-color: rgb(250, 166, 50);
+    width: 50%;
+    color: black;
+    padding: 4px; 
+    border: 2px solid rgb(0, 0, 0);
+    border: 3px solid rgba(56, 56, 56, 0.882);
+    transition: 0.3s;
+}
+
+.loMasVendido div div a:hover  /*Hover botones lo mas vendido*/
+{
+    background-color: rgb(255, 136, 0);
+    font-size: 17px;
+    border: 3px solid rgba(47, 47, 47, 0.882);
+}
+
+
+.loMasVendido div div img /*Img lo mas vendido*/
+{
+    width:301px ;
+    height:402px ;
+    border-bottom: 4px solid black;
+}
+
+.verMas /*Botn ver mas*/
+{
+    text-decoration: none;
+    background-color: rgb(250, 166, 50);
+    color: black;
+    padding: 4px;  
+    line-height: 50px;
+    font-size: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    transition: 0.3s;
+}
+
+.verMas:hover /*Hover ver mas*/
+{
+    background-color: rgb(255, 136, 0);
+    font-size: 21px;
+    border: 3px solid rgba(0, 0, 0, 0.882);
+}
+
+.ofertas /* seccion ofertas*/
+{
+    text-align: center;
+}
+
+.ofertas h2/*Titulo ofertas*/
+{
+    margin-top: 25px;
+    color: black;
+    background-color:  rgb(250, 166, 50);;
+    padding: 4px;
+}
+
+.ofertas div/*Flex section ofertas*/
+{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.ofertas div div /*Box ofertas*/
+{
+    width: 400px;
+    height: 355px;
+    border: 4px solid rgb(0, 0, 0);
+    margin: 30px;
+    text-align: center;
+    line-height: 37px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    letter-spacing: 2px;
+    flex-direction: column;
+}
+
+.ofertas div div img /*Img ofertas*/
+{
+    width:401px ;
+    height:252px ;
+    border-bottom: 4px solid black;
+}
+
+.ofertas div div a /*Botones Ofertas*/
+{
+    text-decoration: none;
+    background-color: rgb(250, 166, 50);
+    color: black;
+    padding: 4px;  
+    border: 2px solid rgb(0, 0, 0);
+    border: 3px solid rgba(56, 56, 56, 0.882);
+    transition: 0.3s;
+}
+
+.ofertas div div a:hover/*Hover boton ofertas*/
+{
+    background-color: rgb(255, 136, 0);
+    font-size: 17px;
+    border: 3px solid rgba(47, 47, 47, 0.882);
+}
+
+
+.categorias /*Texto categorias*/
+{
+    text-align: center;
+}
+
+.categorias h2 /*Titulo categorias*/
+{
+    margin-top: 25px;
+    color: black;
+    background-color:  rgb(250, 166, 50);;
+    padding: 4px;
+}
+.categorias div div  /*Disposicion categorias*/
+{
+    display:inline-block;
+    margin: 50px 100px 50px 100px;
+    transition: 0.3s;
+}
+
+.categorias div div:hover
+{
+    transform: scale(1.07);
+}
+
+.categorias div div img /*Img categorias*/
+{
+    width: 150px;
+    height: 150px;
+}
+
+.categorias div div h3 /*Nombre caegorias*/
+{
+    margin: 10px;
+    letter-spacing: 2px;
+}
+
+
+/*---------------FOOTER---------------*/
+
+footer .redes img /*Redes sociales*/
+{
+    width: 65px;
+    height: 65px;
+    margin-right: -5px;
+    margin-left: 15px;
+}
+
+footer /*Footer*/
+{
+    background-color: rgb(250, 166, 50); 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer div ul /*Lista footer*/
+{
+    margin: 20px;
+    list-style:none;
+}
+
+.botonFixed img /*Boton de ayuda*/
+{
+    width: 65px;
+    height: 65px;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+}
+
+/*---------------CONTACTO---------------*/
+
+/*---------------MAIN---------------*/
+
+.hero2/*Banner No index*/
+{ 
+    width: 100%;
+    height: 13.3vh;
+    background-image: url("../img/banner.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.informacion form
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.informacion form div /*Form*/
+{
+    margin: 10px 5px 10px 5px;
+    color: black;
+    background-color: rgb(141, 141, 141);
+    padding: 5px;
+}
+
+.input /*Botones del form*/
+{
+    margin: 0px 0px 10px 10px;
+    padding: 4px;
+    font-size: 15px;
+}
+
+.botonesContacto input
+{
+    margin: 0 10px 0 10px;
+}
+
+/*---------------PRODUCTOS---------------*/
+
+/*---------------MAIN---------------*/
+
+.boxProductos /*Pagina productos*/
+{
+    text-align: center;
+}
+
+.boxProductos h2/*Titulo secciones productos*/
+{
+    margin-top: 25px;
+    color: black;
+    background-color:  rgb(250, 166, 50);;
+    padding: 4px;
+}
+
+
+.boxProductos div div /*Flex page productos*/
+{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.boxProductos div div div /*Box productos*/
+{
+    width: 400px;
+    height: 355px;
+    border: 4px solid rgb(0, 0, 0);
+    margin: 30px;
+    text-align: center;
+    line-height: 37px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    letter-spacing: 2px;
+    flex-direction: column;
+}
+
+.boxProductos div div div img /*Img page producto*/
+{
+    width:401px ;
+    height:252px ;
+    border-bottom: 4px solid black;
+}
+
+.boxProductos div div div a /*Botones Ofertas*/
+{
+    text-decoration: none;
+    background-color: rgb(250, 166, 50);
+    color: black;
+    padding: 4px;  
+    border: 2px solid rgb(0, 0, 0);
+    border: 3px solid rgba(56, 56, 56, 0.882);
+    transition: 0.3s;
+    margin-bottom: 5px;
+}
+
+.boxProductos div div div a:hover/*Hover boton ofertas*/
+{
+    transform: scale(1.05);
+    background-color: rgb(255, 136, 0);
+    border: 3px solid rgba(47, 47, 47, 0.882);
+}
+
+.categoriasProductos /*Texto categorias*/
+{
+    text-align: center;
+}
+
+.categoriasProductos h2 /*Titulo categorias*/
+{
+    margin-top: 25px;
+    color: black;
+    background-color:  rgb(250, 166, 50);
+    padding: 4px;
+}
+
+.categoriasProductos div  /*Disposicion categorias*/
+{
+    display:inline-block;
+    margin: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    transition: 0.3s;
+}
+
+.categoriasProductos div a /*enlaces categorias productos*/
+{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 900; 
+    font-style:normal;
+    font-family: 'Rubik', sans-serif; 
+    letter-spacing: 2px;
+    text-align: center; 
+    padding: 5px;
+}
+
+.categoriasProductos div:hover /*HOver enlaces categorias productos*/
+{
+    background-color: rgb(255, 136, 0);
+    border: 4px solid rgba(0, 0, 0, 0.882);
+}
+
+.categoriasProductos div h3 /*Nombre caegorias productos*/
+{
+    margin: 10px;
+    letter-spacing: 2px;
+}
+
+.categoriasProductos div /*Box categorias productos*/
+{
+    width: 200px;
+    height: 30px;
+    border: 4px solid rgb(250, 166, 50);
+    margin: 10px;
+    text-align: center;
+    line-height: 37px;
+    background-color: rgba(250, 167, 50, 0.829);
+    display:inline-block;
+    color: black;
+    letter-spacing: 2px;
+    padding: 5px;
+}
+
+/*---------------SERVICIOS---------------*/
+
+/*---------------MAIN---------------*/
+.servicio div /*pagina servicios*/
+{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+.servicio div div /*Box servicios*/
+{
+    width: 400px;
+    height: 40px;
+    border: 4px solid black;
+    margin: 30px;
+    line-height: 37px;
+    background-color:  rgb(250, 166, 50);
+    color: black;
+    letter-spacing: 2px;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.servicio div div:hover /*HOver enlaces categorias productos*/
+{
+    background-color: rgb(255, 136, 0);
+    border: 4px solid rgba(0, 0, 0, 0.882);
+    transform: scale(1.03);
+}
+
+.servicio div a /*enlaces categorias servicio*/
+{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 700px; 
+    font-style:normal;
+    font-family: 'Rubik', sans-serif; 
+    letter-spacing: 2px;
+    text-align: center; 
+}
+
+/*---------------NOSOTROS---------------*/
+
+/*---------------MAIN---------------*/
+
+.gridContainer /*Grilla main nosotros*/
+{
+    width: 80%;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+    grid-template-areas: 
+    "logo logo logo logo"
+    "texto texto texto texto"
+    "party1 party2 party3 party4";
+    text-align: center;
+}
+
+
+.bigLogo /*Logo grande*/
+{
+    grid-area: logo;
+}
+
+.textNosotros /*Nuestra descripcion*/
+{
+    grid-area: texto;
+}
+
+.party1 /*Imagen Nosotros*/
+{
+    grid-area: party1;
+}
+
+.party2 /*Imagen Nosotros*/
+{
+    grid-area: party2;
+}
+
+
+.party3 /*Imagen Nosotros*/
+{
+    grid-area: party3;
+}
+
+.party4 /*Imagen Nosotros*/
+{
+    grid-area: party4;
+}
+
+.bigLogo div img /*Ajustes logo nosotros*/
+{
+    background-color: rgb(250, 166, 50);
+    border-radius: 100%;
+    padding: 3px;
+}
+
+.textNosotros p /*Ajustes parrafo nosotros*/
+{
+    padding: 10px;
+    font-size: 20px;
+    background-color: rgb(141, 141, 141);
+    text-align: center;
+}
+
+.party1 img /*Ajustes imagen nosotros*/
+{
+    width: 300px;
+    height: 200px;
+    margin: 20px;
+    background-color: rgb(0, 0, 0);
+    padding: 5px;
+}
+
+.party2 img /*Ajustes imagen nosotros*/
+{
+    width: 300px;
+    height: 200px;
+    margin: 20px;
+    background-color: rgb(0, 0, 0);
+    padding: 5px;
+}
+
+.party3 img /*Ajustes imagen nosotros*/
+{
+    width: 300px;
+    height: 200px;
+    margin: 20px;
+    background-color: rgb(0, 0, 0);
+    padding: 5px;
+}
+
+.party4 img /*Ajustes imagen nosotros*/
+{
+    width: 300px;
+    height: 200px;
+    margin: 20px;
+    background-color: rgb(0, 0, 0);
+    padding: 5px;
+}
+
+
+/*---------------MEDIA QUERIES---------------*/
+
+/*Responsive max-width*/
+
+@media screen and (max-width:1300px) /*Responsive header*/
+{
+    header
+    {
+        flex-direction: column;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width:685px) /*Responsive menu*/
+{
+    header nav ul
+    {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:770px) /*Esconder boton fixed en pantallas mas pequenas*/
+{
+    .botonFixed
+    {
+        display: none;
+    }
+}
+
+@media screen and (max-width:1245px) /*Rresponsive footer*/
+{
+    footer
+    {
+        flex-direction: column;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width:470px) /*Responsive box ofertas*/
+{
+    .ofertas div div /*Box ofertas*/
+    {
+        width: 300px;
+        height: 500px;
+        border: 4px solid rgb(0, 0, 0);
+        margin: 30px;
+        text-align: center;
+        line-height: 37px;
+        background-color: rgb(0, 0, 0);
+        display:inline-block;
+        color: white;
+        letter-spacing: 2px;
+    }
+
+    .ofertas div div img /*Img ofertas*/
+    {
+        width:301px ;
+        height:402px ;
+        border-bottom: 4px solid black;
+        object-fit: cover;
+    }
+
+    .ofertas div div a /*Botones Ofertas*/
+    {
+        text-decoration: none;
+        background-color: rgb(250, 166, 50);
+        color: black;
+        padding: 4px;  
+        border: 2px solid rgb(0, 0, 0);
+        border: 3px solid rgba(56, 56, 56, 0.882);
+    }
+}
+
+@media screen and (max-width:390px) /*Responsive boxes index*/
+{
+    .ofertas div div /*Box ofertas*/
+    {
+        width: 250px;
+        height: 450px;
+        border: 4px solid rgb(0, 0, 0);
+        margin: 30px;
+        text-align: center;
+        line-height: 37px;
+        background-color: rgb(0, 0, 0);
+        display:inline-block;
+        color: white;
+        letter-spacing: 2px;
+    }
+
+    .ofertas div div img /*Img ofertas*/
+    {
+        width:251px ;
+        height:352px ;
+        border-bottom: 4px solid black;
+        object-fit: cover;
+    }
+
+    .loMasVendido div div /*Box lo mas vendido*/
+    {
+        width: 250px;
+        height: 450px;
+        border: 4px solid rgb(0, 0, 0); /*Para crear el borde de la caja*/
+        margin: 30px;
+        text-align: center;
+        line-height: 37px;
+        background-color: rgb(0, 0, 0);
+        display:inline-block;
+        color: white;
+        letter-spacing: 2px;
+    }
+
+    .loMasVendido div div img /*Img lo mas vendido*/
+    {
+        width:251px ;
+        height:352px ;
+        border-bottom: 4px solid black;
+        object-fit: cover;
+    }
+
+    .categorias div div img /*Img categorias*/
+    {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .categorias div div h3 /*Nombre caegorias*/
+    {
+        display: none;
+    }
+
+    footer .redes img
+    {
+        width: 50px;
+        height: 50px;
+        margin: 0 10px 15px 10px;
+    }
+}
+
+@media screen and (max-width:1200px) /*Responsive main nosotros*/
+{
+    .gridContainer
+    {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "logo logo"
+        "texto texto"
+        "party1 party2"
+        "party3 party4";
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:780px) /*Responsive main nosotros*/
+{
+    .gridContainer
+    {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "logo"
+        "texto"
+        "party1"
+        "party2"
+        "party3"
+        "party4";
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:400px) /*Responsive main nosotros*/
+{
+    .bigLogo img
+    {
+        width: 200px;
+        height: 200px;
+    }
+    .party1 img
+    {
+        width: 240px;
+        height: 140px;
+    }
+
+    .party2 img
+    {
+        width: 240px;
+        height: 140px;
+    }
+    
+    .party3 img
+    {
+        width: 240px;
+        height: 140px;
+    }
+
+    .party4 img
+    {
+        width: 240px;
+        height: 140px;
+    }
+}
+
+@media screen and (max-width:465px) /*Responsive page productos*/
+{
+    .boxProductos div div div
+    {
+        width: 350px;
+        height: 305px;
+    }
+
+    .boxProductos div div div img 
+    {
+        width:351px ;
+        height:202px ;
+    }
+
+    .categoriasProductos div 
+    {
+        display:inline-block;
+        margin: 23px 30px 0px 30px;
+    }
+}
+
+@media screen and (max-width:465px) /*Responsive page productos*/
+{
+    .boxProductos div div div
+    {
+        width: 250px;
+        height: 405px;
+    }
+
+    .boxProductos div div div img 
+    {
+        width:251px ;
+        height:302px ;
+        object-fit: cover;
+    }
+
+    .titulo
+    {
+        font-size: 40px;
+    }
+
+    #subtitulo /*ID Subtitulo*/
+    {
+        font-size: 20px; 
+    } 
+}
+
+
