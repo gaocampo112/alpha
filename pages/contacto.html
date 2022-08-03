@@ -1,62 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../CSS/style.css">
     <title>ALPHA</title>
 </head>
+
 <body>
     <header>
-        <div class="logo">  <!--Logo-->
-            <a href="../index.html"><img src="../img/alpha.png" alt="logo"></a>
-        </div>
-        <nav>  <!--Menu-->
-            <ul>
-                <li class="boton"><a href="../index.html">Inicio</a></li>
-                <li class="boton"><a href="./productos.html">Productos</a></li>
-                <li class="boton"><a href="./servicios.html">Servicios</a></li>
-                <li class="boton"><a href="./contacto.html">Contactos</a></li>
-                <li class="boton"><a href="./acercade.html">Nosotros</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <!--MENU-->
+            <div class="container-fluid">
+                <a class="navbar-brand logo" href="../index.html"><img src="../img/alpha.png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 opc">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./productos.html">PRODUCTOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./servicios.html">SERVICIOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./contacto.html">CONTACTO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./acercade.html">NOSOTROS</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Escribe aqui..."
+                            aria-label="Search">
+                        <button class="buscar" type="submit">BUSCAR</button>
+                    </form>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
-        <section class="hero2">  <!--Titulo-->
-            <h1 class="titulo">CONTACTANOS</h1>
+        <section class="hero2">
+            <!--Titulo-->
+            <h1 class="titulo2">CONTACTANOS</h1>
         </section>
-        <section class="informacion">  <!--Seccion Informacion del usuario-->
-            <form action="">
-                <div>
-                    <label for="nombre">Nombre</label> 
-                    <input type="text" name="nombre"> 
+        <section class="informacion">
+            <!--Seccion Informacion del usuario-->
+            <form class="row g-3">
+                    <div class="col-md-6">
+                        <label for="inputCity" class="form-label">Nombres</label>
+                        <input type="text" class="form-control" id="inputCity">
+                    </div>
+                <div class="col-md-6">
+                    <label for="inputCity" class="form-label">Apellidos</label>
+                    <input type="text" class="form-control" id="inputCity">
                 </div>
-                <div>
-                    <label for="apellido">Apellido</label>
-                    <input type="text" name="apellido">
+                <div class="col-12">
+                    <label for="inputAddress2" class="form-label">Telefono</label>
+                    <input type="text" class="form-control" id="inputAddress2"
+                        placeholder=" numero telefono">
                 </div>
-                <div>
-                    <label for="telefono">Telefono</label>
-                    <input type="text" name="telefono">
-                </div>
-                <div>
-                    <label for="email">Email</label>
-                    <input type="email" name="email">
-                </div>
-                <div>
-                    <p>Genero</p>
-                    <label for="masculino">| Masculino</label>
-                    <input type="radio" name="masculino"> 
-                    <label for="femenino"> | Femenino</label>
-                    <input type="radio" name="femenino">
-                    <label for="otro"> | Otro</label>
-                    <input type="radio" name="otro">
-                </div>
-                <div>
-                    <p>Pais</p>
-                    <select name="" id=""> 
-                        <option value="">- Ninguno -</option>
+                <div class="col-md-4">
+                    <label for="inputState" class="form-label">Pais</label>
+                    <select id="inputState" class="form-select">
+                        <option selected>Elegir...</option>
                         <option value="">Argentina</option>
                         <option value="">Bolivia</option>
                         <option value="">Chile</option>
@@ -75,27 +92,41 @@
                         <option value="">Republica Dominicana</option>
                         <option value="">Uruguay</option>
                         <option value="">Venezuela</option>
+                        <option value="">-- Otro --</option>
                     </select>
                 </div>
-                <div>
-                    <p>Escribenos tu comentario</p>
-                    <textarea name="" id="" cols="50" rows="10"></textarea><!--donde el usuario escribe informacion-->
+                <div class="col-md-4">
+                    <label for="inputState" class="form-label">Genero</label>
+                    <select id="inputState" class="form-select">
+                        <option selected>Elegir..</option>
+                        <option>Mujer</option>
+                        <option>Hombre</option>
+                        <option>-- Otro --</option>
+                    </select>
                 </div>
-                <div>
-                    <div class="botonesContacto">
-                        <input class="input" type="submit"><!--Boton para enviar-->
-                        <input class="input" type="reset"><!--Boton para restablecer-->    
-                    </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="8"></textarea>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="verMas">ENVIAR</button>
                 </div>
             </form>
         </section>
     </main>
     <footer>
-        <div class="logo"> <!--Logo-->
+        <div class="logo">
+            <!--Logo-->
             <a href="../index.html"><img src="../img/alpha.png" alt="logo"></a>
         </div>
-        <div> <!--Enlaces footer-->
-            <ul> 
+        <div>
+            <!--Enlaces footer-->
+            <ul>
                 <li>
                     <p>Lorem ipsum dolor sit.</p>
                 </li>
@@ -110,12 +141,17 @@
                 </li>
             </ul>
         </div>
-        <div class="redes"> <!--Redes solciales-->
+        <div class="redes">
+            <!--Redes solciales-->
             <a href="https://www.facebook.com/" target="_blank"><img src="../img/facebook.png" alt="Facebook"></a>
             <a href="https://www.instagram.com/" target="_blank"><img src="../img/instagram.png" alt="Instagram"></a>
             <a href="https://twitter.com/" target="_blank"><img src="../img/twitter.png" alt="Twitter"></a>
             <a href="https://web.whatsapp.com/" target="_blank"><img src="../img/whatsapp.png" alt="Whatsapp"></a>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
