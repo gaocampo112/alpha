@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,500;1,700&display=swap');
+
+*{ /*para que el navegador no me ponga margenes*/
+    margin: 0; /*Del borde hacia afuera*/
+    padding: 0; /*Del contendio al borde*/
+}
+
+body /*Tipo fuente body*/
+{
+    font-family: 'Rubik', sans-serif; 
+}

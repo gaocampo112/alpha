@@ -1,838 +1,523 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,500;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,500;1,700&display=swap");
+* {
+  /*para que el navegador no me ponga margenes*/
+  margin: 0;
+  /*Del borde hacia afuera*/
+  padding: 0;
+  /*Del contendio al borde*/ }
 
-*{ /*para que el navegador no me ponga margenes*/
-    margin: 0; /*Del borde hacia afuera*/
-    padding: 0; /*Del contendio al borde*/
-}
+body {
+  font-family: 'Rubik', sans-serif; }
 
-/*---------------INDEX---------------*/
-
-/*---------------HEADER---------------*/
-
-header nav
-{
-    background-color: rgb(250, 166, 50);
+header nav {
+  background-color: #faa632;
+  transition: 0.3s; }
+  header nav .opc li {
     transition: 0.3s;
-}
-
-.opc li
-{
-    transition: 0.3s;
-    margin-right: 50px;
-}
-
-.opc li:hover
-{
-    transform: scale(1.1);
-}
-
-.buscar /*Boton buscar nav*/
-{
+    margin-right: 50px; }
+    header nav .opc li:hover {
+      transform: scale(1.1); }
+  header nav .buscar {
     text-decoration: none;
-    background-color:rgb(250, 166, 50);
+    background-color: #faa632;
     color: black;
     font-family: var(--bs-font-sans-serif);
     font-size: medium;
     padding: 5px;
     font-weight: 500;
     border: none;
-    transition: 0.3s;
-}
-
-.buscar:hover /*Hover buscar nav*/
-{
-    transform: scale(1.05);
-}
-
-.logo img /*Logo*/
-{
+    transition: 0.3s; }
+    header nav .buscar:hover {
+      transform: scale(1.05); }
+  header nav .logo img {
     width: 80px;
     height: 80px;
     margin: 20px;
-    margin-right: 50px;
-}
+    margin-right: 50px; }
 
-.titulo /*ID Titulo*/
-{
-    color: rgb(253, 253, 253); /*Color*/
-    font-size: 50px; /*Tamano de letra*/
-    font-weight: 500px; /*Negrita*/
-    font-style:normal; /*Estilo de letra*/
-    font-family: 'Rubik', sans-serif; /*Tipografia*/
-    letter-spacing: 10px;/*Espacio entre letras*/
-    line-height: 100px; /*Separa entre linea y linea*/
-    text-align: center; /*posicion del texto*/
-    background-color: rgba(0, 0, 0, 0.574);
-    margin: 0;
-}
-
-.titulo2 /*ID Titulo pages != index*/
-{
-    color: rgb(253, 253, 253); /*Color*/
-    font-size: 50px; /*Tamano de letra*/
-    font-weight: 500px; /*Negrita*/
-    font-style:normal; /*Estilo de letra*/
-    font-family: 'Rubik', sans-serif; /*Tipografia*/
-    letter-spacing: 10px;/*Espacio entre letras*/
-    line-height: 100px; /*Separa entre linea y linea*/
-    text-align: center; /*posicion del texto*/
-    background-color: rgba(56, 56, 56, 0.882);
-}
-
-/*---------------MAIN---------------*/
-
-body /*Tipo fuente body*/
-{
-    font-family: 'Rubik', sans-serif; 
-}
-
-main /*Fondo del main*/
-{
-    background-color: rgba(56, 56, 56, 0.882);
-}
-
-.loMasVendido /*Seccion lo mas vendido*/
-{
-    text-align: center;
-}
-
-.loMasVendido h2 /*Lo mas vendido titulo*/
-{
-    margin-top: 25px;
-    color: black;
-    background-color:  rgb(250, 166, 50);;
-    padding: 4px;
-}
-
-.loMasVendido div /*Flex section lo mas vendido*/
-{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.loMasVendido div div /*Box lo mas vendido*/
-{
-    width: 40vh;
-    height: 70vh;
-    border: 4px solid rgb(0, 0, 0); /*Para crear el borde de la caja*/
-    margin: 30px;
-    text-align: center;
-    line-height: 37px;
-    background-color: rgb(0, 0, 0);
-    color: white;
-    letter-spacing: 2px;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.loMasVendido div div a /*Boton lo mas vendido*/
-{
-    text-decoration: none;
-    background-color: rgb(250, 166, 50);
-    width: 50%;
-    color: black;
-    padding: 4px; 
-    border: 2px solid rgb(0, 0, 0);
-    border: 3px solid rgba(56, 56, 56, 0.882);
-    transition: 0.3s;
-    margin-bottom: 8px;
-}
-
-.loMasVendido div div a:hover  /*Hover botones lo mas vendido*/
-{
-    background-color: rgb(255, 136, 0);
-    font-size: 17px;
-    border: 3px solid rgba(47, 47, 47, 0.882);
-}
-
-
-.loMasVendido div div img /*Img lo mas vendido*/
-{
-    width: 100%;
-    height:80% ;
-    border-bottom: 4px solid black;
-}
-
-.verMas /*Botn ver mas*/
-{
-    text-decoration: none;
-    background-color: rgb(250, 166, 50);
-    color: black;
-    padding: 4px;  
-    line-height: 50px;
-    font-size: 20px;
-    padding-right: 20px;
-    padding-left: 20px;
-    transition: 0.3s;
-}
-
-.verMas:hover /*Hover ver mas*/
-{
-    background-color: rgb(255, 136, 0);
-    font-size: 21px;
-    border: 3px solid rgba(0, 0, 0, 0.882);
-    color: black;
-}
-
-.ofertas /* seccion ofertas*/
-{
-    text-align: center;
-}
-
-.ofertas h2/*Titulo ofertas*/
-{
-    margin-top: 25px;
-    color: black;
-    background-color:  rgb(250, 166, 50);
-    padding: 4px;
-}
-
-.ofertas div/*Flex section ofertas*/
-{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.ofertas div div /*Box ofertas*/
-{
-    width: 55vh;
-    height: 55vh;
-    border: 4px solid rgb(0, 0, 0);
-    margin: 30px;
-    text-align: center;
-    line-height: 37px;
-    background-color: rgb(0, 0, 0);
-    color: white;
-    letter-spacing: 2px;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.ofertas div div img /*Img ofertas*/
-{
-    width:100% ;
-    height:70%;
-    border-bottom: 4px solid black;
-}
-
-.ofertas div div a /*Botones Ofertas*/
-{
-    text-decoration: none;
-    background-color: rgb(250, 166, 50);
-    color: black;
-    padding: 4px;  
-    border: 2px solid rgb(0, 0, 0);
-    border: 3px solid rgba(56, 56, 56, 0.882);
-    transition: 0.3s;
-    margin-bottom: 10px;
-}
-
-.ofertas div div a:hover/*Hover boton ofertas*/
-{
-    background-color: rgb(255, 136, 0);
-    font-size: 17px;
-    border: 3px solid rgba(47, 47, 47, 0.882);
-}
-
-
-.categorias /*Texto categorias*/
-{
-    text-align: center;
-}
-
-.categorias h2 /*Titulo categorias*/
-{
-    margin-top: 25px;
-    color: black;
-    background-color:  rgb(250, 166, 50);;
-    padding: 4px;
-}
-
-.categorias div /*Flex categorias productos*/
-{
-    display: flex;
-    justify-content:space-evenly;
-    flex-wrap: wrap;
-}
-
-.categorias div div  /*Disposicion categorias*/
-{
-    display:inline-block;
-    margin: 50px 100px 50px 100px;
-    transition: 0.3s;
-}
-
-.categorias div div:hover
-{
-    transform: scale(1.07);
-}
-
-.categorias div div img /*Img categorias*/
-{
-    width: 150px;
-    height: 150px;
-}
-
-.categorias div div h3 /*Nombre caegorias*/
-{
-    margin: 10px;
-    letter-spacing: 2px;
-}
-
-
-/*---------------FOOTER---------------*/
-
-footer .redes img /*Redes sociales*/
-{
-    width: 65px;
-    height: 65px;
-    margin-right: -5px;
-    margin-left: 15px;
-}
-
-footer /*Footer*/
-{
-    background-color: rgb(250, 166, 50); 
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-footer div ul /*Lista footer*/
-{
+footer {
+  background-color: #faa632;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap; }
+  footer div ul {
     margin: 20px;
-    list-style:none;
-}
-
-.botonFixed img /*Boton de ayuda*/
-{
+    list-style: none; }
+  footer .botonFixed img {
     width: 65px;
     height: 65px;
     position: fixed;
     right: 15px;
-    bottom: 15px;
-}
+    bottom: 15px; }
+  footer .logo {
+    margin-left: 30px; }
+    footer .logo img {
+      width: 100px;
+      height: 100px; }
+  footer .redes img {
+    width: 65px;
+    height: 65px;
+    margin-right: -5px;
+    margin-left: 15px; }
 
-footer .logo /*Logo footer*/
-{
-    margin-left: 30px;
-}
+/*---------------INDEX---------------*/
+main {
+  background-color: rgba(56, 56, 56, 0.882); }
+  main .titulo {
+    color: #fdfdfd;
+    /*Color*/
+    font-size: 50px;
+    /*Tamano de letra*/
+    font-weight: 500px;
+    /*Negrita*/
+    font-style: normal;
+    /*Estilo de letra*/
+    font-family: 'Rubik', sans-serif;
+    /*Tipografia*/
+    letter-spacing: 10px;
+    /*Espacio entre letras*/
+    line-height: 100px;
+    /*Separa entre linea y linea*/
+    text-align: center;
+    /*posicion del texto*/
+    background-color: rgba(0, 0, 0, 0.574);
+    margin: 0; }
+  main .loMasVendido {
+    text-align: center; }
+    main .loMasVendido h2 {
+      margin-top: 25px;
+      color: black;
+      background-color: #faa632;
+      padding: 4px; }
+    main .loMasVendido div {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: space-evenly; }
+      main .loMasVendido div div {
+        width: 40vh;
+        height: 70vh;
+        border: 4px solid black;
+        /*Para crear el borde de la caja*/
+        margin: 30px;
+        text-align: center;
+        line-height: 37px;
+        background-color: black;
+        color: white;
+        letter-spacing: 2px;
+        flex-direction: column;
+        justify-content: space-between; }
+        main .loMasVendido div div a {
+          text-decoration: none;
+          background-color: #faa632;
+          width: 50%;
+          color: black;
+          padding: 4px;
+          border: 2px solid black;
+          border: 3px solid rgba(56, 56, 56, 0.882);
+          transition: 0.3s;
+          margin-bottom: 8px; }
+          main .loMasVendido div div a:hover {
+            background-color: #ff8800;
+            font-size: 17px;
+            border: 3px solid rgba(47, 47, 47, 0.882); }
+        main .loMasVendido div div img {
+          width: 100%;
+          height: 80%;
+          border-bottom: 4px solid black; }
+  main .verMas {
+    text-decoration: none;
+    background-color: #faa632;
+    color: black;
+    padding: 4px;
+    line-height: 50px;
+    font-size: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    transition: 0.3s; }
+    main .verMas:hover {
+      background-color: #ff8800;
+      font-size: 21px;
+      border: 3px solid rgba(0, 0, 0, 0.882);
+      color: black; }
+  main .ofertas {
+    text-align: center; }
+    main .ofertas h2 {
+      margin-top: 25px;
+      color: black;
+      background-color: #faa632;
+      padding: 4px; }
+    main .ofertas div {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center; }
+      main .ofertas div div {
+        width: 55vh;
+        height: 55vh;
+        border: 4px solid black;
+        margin: 30px;
+        text-align: center;
+        line-height: 37px;
+        background-color: black;
+        color: white;
+        letter-spacing: 2px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between; }
+        main .ofertas div div img {
+          width: 100%;
+          height: 70%;
+          border-bottom: 4px solid black; }
+        main .ofertas div div a {
+          text-decoration: none;
+          background-color: #faa632;
+          color: black;
+          padding: 4px;
+          border: 2px solid black;
+          border: 3px solid rgba(56, 56, 56, 0.882);
+          transition: 0.3s;
+          margin-bottom: 10px; }
+          main .ofertas div div a:hover {
+            background-color: #ff8800;
+            font-size: 17px;
+            border: 3px solid rgba(47, 47, 47, 0.882); }
+  main .categorias {
+    text-align: center; }
+    main .categorias h2 {
+      margin-top: 25px;
+      color: black;
+      background-color: #faa632;
+      padding: 4px; }
+    main .categorias div {
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap; }
+      main .categorias div div {
+        display: inline-block;
+        margin: 50px 100px 50px 100px;
+        transition: 0.3s; }
+        main .categorias div div:hover {
+          transform: scale(1.07); }
+        main .categorias div div img {
+          width: 150px;
+          height: 150px; }
+        main .categorias div div h3 {
+          margin: 10px;
+          letter-spacing: 2px; }
 
 /*---------------CONTACTO---------------*/
+main .titulo2 {
+  color: #fdfdfd;
+  /*Color*/
+  font-size: 50px;
+  /*Tamano de letra*/
+  font-weight: 500px;
+  /*Negrita*/
+  font-style: normal;
+  /*Estilo de letra*/
+  font-family: 'Rubik', sans-serif;
+  /*Tipografia*/
+  letter-spacing: 10px;
+  /*Espacio entre letras*/
+  line-height: 100px;
+  /*Separa entre linea y linea*/
+  text-align: center;
+  /*posicion del texto*/
+  background-color: rgba(56, 56, 56, 0.882); }
 
-/*---------------MAIN---------------*/
+main .hero2 {
+  width: 100%;
+  height: 13.5vh;
+  background-image: url("../img/banner.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
 
-.hero2/*Banner No index*/
-{ 
-    width: 100%;
-    height: 13.5vh;
-    background-image: url("../img/banner.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-.informacion /*Campo Form*/
-{
-    width: 90%;
-}
-
-.informacion form div:nth-child(1) /*Primer hijo del form*/
-{
-    padding-top: 40px;
-}
-
-.informacion form div:nth-child(2) /*Segundo hijo del form*/
-{
-    padding-top: 40px;
-}
-
-.informacion form div label /*Texto form*/
-{
-    background-color: rgba(222, 222, 222, 0.884);
-    padding: 5px;
-}
-
-.informacion form div:nth-child(8) /*Ultimo hijo del form*/
-{
-    padding-bottom:40px;
-}
-
-.informacion form div /*Hijos Form*/
-{
-    padding-left: 100px;
-}
-
+main .informacion {
+  width: 90%; }
+  main .informacion form div {
+    padding-left: 100px; }
+    main .informacion form div:nth-child(1) {
+      padding-top: 40px; }
+    main .informacion form div:nth-child(2) {
+      padding-top: 40px; }
+    main .informacion form div:nth-child(8) {
+      padding-bottom: 40px; }
+    main .informacion form div label {
+      background-color: rgba(222, 222, 222, 0.884);
+      padding: 5px; }
 
 /*---------------PRODUCTOS---------------*/
-
-/*---------------MAIN---------------*/
-
-.boxProductos /*Pagina productos*/
-{
-    text-align: center;
-}
-
-.boxProductos h2/*Titulo secciones productos*/
-{
+main .boxProductos {
+  text-align: center; }
+  main .boxProductos h2 {
     margin-top: 25px;
     color: black;
-    background-color:  rgb(250, 166, 50);;
-    padding: 4px;
-}
-
-
-.boxProductos div div /*Flex page productos*/
-{
+    background-color: #faa632;
+    padding: 4px; }
+  main .boxProductos div div {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-}
+    justify-content: space-evenly; }
+    main .boxProductos div div div {
+      width: 55vh;
+      height: 55vh;
+      border: 4px solid black;
+      margin: 30px;
+      text-align: center;
+      line-height: 37px;
+      background-color: black;
+      color: white;
+      letter-spacing: 2px;
+      flex-direction: column;
+      justify-content: space-between; }
+      main .boxProductos div div div img {
+        width: 100%;
+        height: 70%;
+        border-bottom: 4px solid black; }
+      main .boxProductos div div div a {
+        text-decoration: none;
+        background-color: #faa632;
+        color: black;
+        padding-left: 5px;
+        padding-right: 5px;
+        border: 2px solid black;
+        border: 3px solid rgba(56, 56, 56, 0.882);
+        transition: 0.3s;
+        margin-bottom: 10px; }
+        main .boxProductos div div div a:hover {
+          transform: scale(1.05);
+          background-color: #ff8800;
+          border: 3px solid rgba(47, 47, 47, 0.882); }
 
-.boxProductos div div div /*Box productos*/
-{
-    width: 55vh;
-    height: 55vh;
-    border: 4px solid rgb(0, 0, 0);
-    margin: 30px;
-    text-align: center;
-    line-height: 37px;
-    background-color: rgb(0, 0, 0);
-    color: white;
-    letter-spacing: 2px;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.boxProductos div div div img /*Img page producto*/
-{
-    width:100% ;
-    height:70% ;
-    border-bottom: 4px solid black;
-}
-
-.boxProductos div div div a 
-{
-    text-decoration: none;
-    background-color: rgb(250, 166, 50);
-    color: black;
-    padding-left: 5px;
-    padding-right: 5px;
-    border: 2px solid rgb(0, 0, 0);
-    border: 3px solid rgba(56, 56, 56, 0.882);
-    transition: 0.3s;
-    margin-bottom: 10px;
-}
-
-.boxProductos div div div a:hover/*Hover boton ofertas*/
-{
-    transform: scale(1.05);
-    background-color: rgb(255, 136, 0);
-    border: 3px solid rgba(47, 47, 47, 0.882);
-}
-
-.categoriasProductos /*Texto categorias*/
-{
-    text-align: center;
-}
-
-.categoriasProductos h2 /*Titulo categorias*/
-{
+main .categoriasProductos {
+  text-align: center; }
+  main .categoriasProductos h2 {
     margin-top: 25px;
     color: black;
-    background-color:  rgb(250, 166, 50);
-    padding: 4px;
-}
-
-.categoriasProductos div  /*Disposicion categorias productos*/
-{
-    display:inline-block;
+    background-color: #faa632;
+    padding: 4px; }
+  main .categoriasProductos div {
+    display: inline-block;
     margin: 20px;
     margin-left: 40px;
     margin-right: 40px;
     transition: 0.3s;
-}
-
-.categoriasProductos div a /*enlaces categorias productos*/
-{
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
-    font-weight: 900; 
-    font-style:normal;
-    font-family: 'Rubik', sans-serif; 
-    letter-spacing: 2px;
-    text-align: center; 
-    padding: 5px;
-}
-
-.categoriasProductos div:hover /*HOver enlaces categorias productos*/
-{
-    background-color: rgb(255, 136, 0);
-    border: 4px solid rgba(0, 0, 0, 0.882);
-}
-
-.categoriasProductos div h3 /*Nombre caegorias productos*/
-{
-    margin: 10px;
-    letter-spacing: 2px;
-}
-
-.categoriasProductos div /*Box categorias productos*/
-{
     width: auto;
     height: auto;
-    border: 4px solid rgb(250, 166, 50);
+    border: 4px solid #faa632;
     margin: 10px;
     text-align: center;
     line-height: 37px;
     background-color: rgba(250, 167, 50, 0.829);
-    display:inline-block;
+    display: inline-block;
     color: black;
     letter-spacing: 2px;
-    padding: 5px;
-}
+    padding: 5px; }
+    main .categoriasProductos div a {
+      text-decoration: none;
+      color: black;
+      font-size: 20px;
+      font-weight: 900;
+      font-style: normal;
+      font-family: 'Rubik', sans-serif;
+      letter-spacing: 2px;
+      text-align: center;
+      padding: 5px; }
+    main .categoriasProductos div:hover {
+      background-color: #ff8800;
+      border: 4px solid rgba(0, 0, 0, 0.882); }
+    main .categoriasProductos div h3 {
+      margin: 10px;
+      letter-spacing: 2px; }
 
 /*---------------SERVICIOS---------------*/
-
-/*---------------MAIN---------------*/
-.servicio div /*pagina servicios*/
-{
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    justify-content: center;
-}
-
-.servicio div div /*Box servicios*/
-{
-    width: 25%;
+main .servicio div {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center; }
+  main .servicio div div {
+    width: 35vh;
     height: auto;
     border: 4px solid black;
     margin: 30px;
     line-height: 37px;
-    background-color:  rgb(250, 166, 50);
+    background-color: #faa632;
     color: black;
     letter-spacing: 2px;
     padding: 10px;
-    transition: 0.3s;
-}
-
-.servicio div div:hover /*HOver enlaces categorias productos*/
-{
-    background-color: rgb(255, 136, 0);
-    border: 4px solid rgba(0, 0, 0, 0.882);
-    transform: scale(1.03);
-}
-
-.servicio div a /*enlaces categorias servicio*/
-{
+    transition: 0.3s; }
+    main .servicio div div:hover {
+      background-color: #ff8800;
+      border: 4px solid rgba(0, 0, 0, 0.882);
+      transform: scale(1.03); }
+  main .servicio div a {
     text-decoration: none;
     color: black;
     font-size: 20px;
-    font-weight: 700px; 
-    font-style:normal;
-    font-family: 'Rubik', sans-serif; 
+    font-weight: 700px;
+    font-style: normal;
+    font-family: 'Rubik', sans-serif;
     letter-spacing: 2px;
-    text-align: center; 
-}
+    text-align: center; }
 
 /*---------------NOSOTROS---------------*/
+main .gridContainer {
+  width: 100%;
+  padding: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 20px;
+  grid-template-areas: "logo logo logo logo" "texto texto texto texto" "party1 party2 party3 party4";
+  text-align: center; }
 
-/*---------------MAIN---------------*/
+main .bigLogo {
+  grid-area: logo; }
 
-.gridContainer /*Grilla main nosotros*/
-{
-    width: 100%;
-    padding: 40px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+main .textNosotros {
+  grid-area: texto; }
+
+main .party1 {
+  grid-area: party1; }
+  main .party1 img {
+    width: 40vh;
+    height: 30vh;
+    margin: 20px;
+    background-color: black;
+    padding: 5px; }
+
+main .party2 {
+  grid-area: party2; }
+  main .party2 img {
+    width: 40vh;
+    height: 30vh;
+    margin: 20px;
+    background-color: black;
+    padding: 5px; }
+
+main .party3 {
+  grid-area: party3; }
+  main .party3 img {
+    width: 40vh;
+    height: 30vh;
+    margin: 20px;
+    background-color: black;
+    padding: 5px; }
+
+main .party4 {
+  grid-area: party4; }
+  main .party4 img {
+    width: 40vh;
+    height: 30vh;
+    margin: 20px;
+    background-color: black;
+    padding: 5px; }
+
+main .bigLogo div img {
+  background-color: #faa632;
+  border-radius: 100%;
+  padding: 3px; }
+
+main .textNosotros p {
+  padding: 10px;
+  font-size: 20px;
+  background-color: #8d8d8d;
+  text-align: center; }
+
+@media screen and (max-width: 1300px) {
+  header {
+    padding: 0; } }
+
+@media screen and (max-width: 685px) {
+  header nav ul {
+    flex-direction: column;
+    text-align: center; } }
+
+@media screen and (max-width: 770px) {
+  main .botonFixed {
+    display: none; } }
+
+@media screen and (max-width: 1245px) {
+  footer {
+    flex-direction: column;
+    padding: 0; } }
+
+@media screen and (max-width: 470px) {
+  main .ofertas div {
+    flex-direction: column;
+    text-align: center; }
+    main .ofertas div div {
+      width: 40vh;
+      height: 75vh; }
+      main .ofertas div div img {
+        width: 100%;
+        height: 80%;
+        object-fit: cover; } }
+
+@media screen and (max-width: 1250px) {
+  main .loMasVendido div div {
+    height: 75vh; }
+    main .loMasVendido div div img {
+      height: 75%;
+      object-fit: cover; } }
+
+@media screen and (max-width: 390px) {
+  main .categorias div div img {
+    width: 120px;
+    height: 120px; }
+  main .categorias div div h3 {
+    display: none; }
+  footer .redes img {
+    width: 50px;
+    height: 50px;
+    margin: 0 10px 15px 10px; } }
+
+@media screen and (max-width: 1300px) {
+  main .gridContainer {
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    gap: 20px;
-    grid-template-areas: 
-    "logo logo logo logo"
-    "texto texto texto texto"
-    "party1 party2 party3 party4";
-    text-align: center;
-}
+    grid-template-areas: "logo logo" "texto texto" "party1 party2" "party3 party4";
+    text-align: center; } }
 
+@media screen and (max-width: 780px) {
+  main .gridContainer {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "logo" "texto" "party1" "party2" "party3" "party4";
+    text-align: center; } }
 
-.bigLogo /*Logo grande*/
-{
-    grid-area: logo;
-}
+@media screen and (max-width: 400px) {
+  main .bigLogo img {
+    width: 200px;
+    height: 200px; } }
 
-.textNosotros /*Nuestra descripcion*/
-{
-    grid-area: texto;
-}
-
-.party1 /*Imagen Nosotros*/
-{
-    grid-area: party1;
-}
-
-.party2 /*Imagen Nosotros*/
-{
-    grid-area: party2;
-}
-
-
-.party3 /*Imagen Nosotros*/
-{
-    grid-area: party3;
-}
-
-.party4 /*Imagen Nosotros*/
-{
-    grid-area: party4;
-}
-
-.bigLogo div img /*Ajustes logo nosotros*/
-{
-    background-color: rgb(250, 166, 50);
-    border-radius: 100%;
-    padding: 3px;
-}
-
-.textNosotros p /*Ajustes parrafo nosotros*/
-{
-    padding: 10px;
-    font-size: 20px;
-    background-color: rgb(141, 141, 141);
-    text-align: center;
-}
-
-.party1 img /*Ajustes imagen nosotros*/
-{
-    width: 40vh;
-    height: 30vh;
-    margin: 20px;
-    background-color: rgb(0, 0, 0);
-    padding: 5px;
-}
-
-.party2 img /*Ajustes imagen nosotros*/
-{
-    width: 40vh;
-    height: 30vh;
-    margin: 20px;
-    background-color: rgb(0, 0, 0);
-    padding: 5px;
-}
-
-.party3 img /*Ajustes imagen nosotros*/
-{
-    width: 40vh;
-    height: 30vh;
-    margin: 20px;
-    background-color: rgb(0, 0, 0);
-    padding: 5px;
-}
-
-.party4 img /*Ajustes imagen nosotros*/
-{
-    width: 40vh;
-    height: 30vh;
-    margin: 20px;
-    background-color: rgb(0, 0, 0);
-    padding: 5px;
-}
-
-
-/*---------------MEDIA QUERIES---------------*/
-
-/*Responsive max-width*/
-
-@media screen and (max-width:1300px) /*Responsive header*/
-{
-    header
-    {
-        padding: 0;
-
-    }
-}
-
-@media screen and (max-width:685px) /*Responsive menu*/
-{
-    header nav ul
-    {
-        flex-direction: column;
-        text-align: center;
-    }
-}
-
-@media screen and (max-width:770px) /*Esconder boton fixed en pantallas mas pequenas*/
-{
-    .botonFixed
-    {
-        display: none;
-    }
-}
-
-@media screen and (max-width:1245px) /*Rresponsive footer*/
-{
-    footer
-    {
-        flex-direction: column;
-        padding: 0;
-    }
-}
-
-@media screen and (max-width:470px) /*Responsive box ofertas*/
-{
-    .ofertas div
-    {
-        justify-content: center;
-    }
-
-    .ofertas div div /*Box ofertas*/
-    {
-        width: 40vh;
-        height: 75vh;
-        
-    }
-
-    .ofertas div div img /*Img ofertas*/
-    {
+@media screen and (max-width: 560px) {
+  main .boxProductos div div {
+    justify-content: center; }
+    main .boxProductos div div div {
+      width: 40vh;
+      height: 60vh; }
+      main .boxProductos div div div img {
         width: 100%;
-        height:80% ;
-        object-fit: cover;
-    }
-}
-
-@media screen and (max-width:1060px) /*Responsive boxes index*/
-{
-    .loMasVendido div div
-    {
-        height: 75vh;
-    }
-
-    .loMasVendido div div img
-    {
         height: 75%;
-        object-fit: cover;
+        object-fit: cover; } }
 
-    }
-}
+@media screen and (max-width: 500px) {
+  main .banner {
+    display: none; } }
 
+@media screen and (min-width: 501px) {
+  main .banner2 div img {
+    display: none; } }
 
-
-@media screen and (max-width:390px) /*Responsive boxes index*/
-{
-    .categorias div div img /*Img categorias*/
-    {
-        width: 120px;
-        height: 120px;
-    }
-    
-    .categorias div div h3 /*Nombre caegorias*/
-    {
-        display: none;
-    }
-
-    footer .redes img
-    {
-        width: 50px;
-        height: 50px;
-        margin: 0 10px 15px 10px;
-    }
-}
-
-@media screen and (max-width:1300px) /*Responsive main nosotros*/
-{
-    .gridContainer
-    {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
-        grid-template-areas: 
-        "logo logo"
-        "texto texto"
-        "party1 party2"
-        "party3 party4";
-        text-align: center;
-    }
-}
-
-@media screen and (max-width:780px) /*Responsive main nosotros*/
-{
-    .gridContainer
-    {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        grid-template-areas: 
-        "logo"
-        "texto"
-        "party1"
-        "party2"
-        "party3"
-        "party4";
-        text-align: center;
-    }
-}
-
-@media screen and (max-width:400px) /*Responsive main nosotros*/
-{
-    .bigLogo img
-    {
-        width: 200px;
-        height: 200px;
-    }
-    
-}
-
-@media screen and (max-width:560px) /*Responsive page productos*/
-{
-    .boxProductos div div
-    {
-        justify-content: center;
-    }
-
-    .boxProductos div div div
-    {
-        width: 40vh;
-        height: 60vh;
-        
-    }
-
-    .boxProductos div div div img
-    {
-        width: 100%;
-        height:75% ;
-        object-fit: cover;
-    }
-}
-
-@media screen and (max-width:500px)  /*Desaparece banner index*/
-{
-    .banner
-    {
-        display: none;
-    }
-}
-
-@media screen and (min-width: 501px) /*Desaparece imagen banner index*/
-{
-    .banner2 div img
-    {
-        display: none;
-    }
-}
-
-@media screen and (max-width:501px) /*Aparece imagen banner index*/
-{
-    .banner2 div img
-    {
-        width: 100%;
-        height: 30vh;
-        object-fit: cover;
-    }
-}
+@media screen and (max-width: 501px) {
+  main .banner2 div img {
+    width: 100%;
+    height: 30vh;
+    object-fit: cover; } }

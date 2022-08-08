@@ -1,0 +1,256 @@
+@media screen and (max-width:1300px) /*Responsive header*/
+{
+    header
+    {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width:685px) /*Responsive menu*/
+{
+    header
+    {
+        nav
+        {
+            ul
+            {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:770px) /*Esconder boton fixed en pantallas mas pequenas*/
+{
+    main
+    {
+        .botonFixed
+        {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width:1245px) /*Rresponsive footer*/
+{
+    footer
+    {
+        flex-direction: column;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width:470px) /*Responsive box ofertas*/
+{
+    main
+    {
+        .ofertas
+        {
+            div
+            {
+                flex-direction: column;
+                text-align: center;
+                div /*Box ofertas*/
+                {
+                    width: 40vh;
+                    height: 75vh;
+                    img /*Img ofertas*/
+                    {
+                        width: 100%;
+                        height:80% ;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1250px) /*Responsive boxes index*/
+{
+    main
+    {
+        .loMasVendido
+        {
+            div
+            {
+                div
+                {
+                    height: 75vh;
+                    img
+                    {
+                        height: 75%;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:390px) /*Responsive boxes index*/
+{
+    main
+    {
+        .categorias 
+        {
+            div
+            {
+                div
+                {
+                    img /*Img categorias*/
+                    {
+                        width: 120px;
+                        height: 120px;
+                    }
+                    h3 /*Nombre caegorias*/
+                    {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    
+    footer 
+    {
+        .redes
+        {
+            img
+            {
+                width: 50px;
+                height: 50px;
+                margin: 0 10px 15px 10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1300px) /*Responsive main nosotros*/
+{
+    main
+    {
+        .gridContainer
+        {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto;
+            grid-template-areas: 
+            "logo logo"
+            "texto texto"
+            "party1 party2"
+            "party3 party4";
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width:780px) /*Responsive main nosotros*/
+{
+    main
+    {
+        .gridContainer
+        {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            grid-template-areas: 
+            "logo"
+            "texto"
+            "party1"
+            "party2"
+            "party3"
+            "party4";
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width:400px) /*Responsive main nosotros*/
+{
+    main
+    {
+        .bigLogo
+        {
+            img
+            {
+                width: 200px;
+                height: 200px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:560px) /*Responsive page productos*/
+{
+    main
+    {
+        .boxProductos
+        {
+            div
+            {
+                div
+                {
+                    justify-content: center;
+                    div
+                    {
+                        width: 40vh;
+                        height: 60vh;
+                        img
+                        {
+                            width: 100%;
+                            height:75% ;
+                            object-fit: cover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:500px)  /*Desaparece banner index*/
+{
+    main
+    {
+        .banner
+        {
+            display: none;
+        }
+    }
+}
+
+@media screen and (min-width: 501px) /*Desaparece imagen banner index*/
+{
+    main
+    {
+        .banner2
+        {
+            div
+            {
+                img
+                {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:501px) /*Aparece imagen banner index*/
+{
+    main
+    {
+        .banner2
+        {
+            div
+            {
+                img
+                {
+                    width: 100%;
+                    height: 30vh;
+                    object-fit: cover;
+                }
+            }
+        }
+    } 
+}

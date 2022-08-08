@@ -1,0 +1,50 @@
+@import "../base/variables";
+
+footer 
+{
+    background-color: rgb(250, 166, 50); 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    div
+    {
+        ul /*Lista footer*/
+        {
+            margin: 20px;
+            list-style:none;
+        }
+    }
+    .botonFixed 
+    {
+        img /*Boton de ayuda*/
+        {
+            width: 65px;
+            height: 65px;
+            position: fixed;
+            right: 15px;
+            bottom: 15px;
+        }
+    }
+
+    .logo /*Logo footer*/
+    {
+        margin-left: 30px;
+        img
+        {
+            width: 100px;
+            height: 100px;
+        }
+    }
+
+    .redes/*Redes sociales*/
+    {
+        img
+        {
+            width: 65px;
+            height: 65px;
+            margin-right: -5px;
+            margin-left: 15px;
+        }
+    }
+}
