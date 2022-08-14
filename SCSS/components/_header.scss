@@ -1,10 +1,11 @@
 @import "../base/variables";
+@import "../base/maps";
 
 header
 {
     nav
     {
-        background-color: rgb(250, 166, 50);
+        background-color: nth($colores , 1 );
         transition: 0.3s;
         .opc /*Links nav*/
         {
@@ -19,10 +20,10 @@ header
             }
         }
         .buscar /*Boton buscar nav*/
-        {
+        { 
             text-decoration: none;
-            background-color:rgb(250, 166, 50);
-            color: black;
+            background-color: nth($colores , 1 );
+            color: nth($colores , 4 );
             font-family: var(--bs-font-sans-serif);
             font-size: medium;
             padding: 5px;

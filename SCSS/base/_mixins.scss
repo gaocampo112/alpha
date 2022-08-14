@@ -1,0 +1,17 @@
+@mixin flex ($flex, $justify, $align, $wrap) //* Mixin Flexbox
+{
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-wrap: $wrap;
+}
+
+@mixin basic ($width, $height, $margin, $padding, $border, $line-height)
+{
+    width: $width;
+    height: $height;
+    margin: $margin;
+    padding: $padding;
+    border: $border;
+    line-height: $line-height;
+}

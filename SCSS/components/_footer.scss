@@ -1,12 +1,11 @@
 @import "../base/variables";
+@import "../base/maps";
+@import "../base/mixins";
 
 footer 
 {
-    background-color: rgb(250, 166, 50); 
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
+    background-color: nth($colores , 1 ); 
+    @include flex(flex, space-around, center, wrap);
     div
     {
         ul /*Lista footer*/

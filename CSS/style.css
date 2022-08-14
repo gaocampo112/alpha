@@ -35,37 +35,17 @@ header nav {
     margin: 20px;
     margin-right: 50px; }
 
-footer {
-  background-color: #faa632;
+main .ofertas div, main .categoriasProductos, main .servicio div {
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap; }
-  footer div ul {
-    margin: 20px;
-    list-style: none; }
-  footer .botonFixed img {
-    width: 65px;
-    height: 65px;
-    position: fixed;
-    right: 15px;
-    bottom: 15px; }
-  footer .logo {
-    margin-left: 30px; }
-    footer .logo img {
-      width: 100px;
-      height: 100px; }
-  footer .redes img {
-    width: 65px;
-    height: 65px;
-    margin-right: -5px;
-    margin-left: 15px; }
+  flex-wrap: wrap;
+  justify-content: center; }
 
 /*---------------INDEX---------------*/
 main {
   background-color: rgba(56, 56, 56, 0.882); }
   main .titulo {
-    color: #fdfdfd;
+    color: white;
     /*Color*/
     font-size: 50px;
     /*Tamano de letra*/
@@ -92,17 +72,16 @@ main {
       padding: 4px; }
     main .loMasVendido div {
       display: flex;
+      justify-content: space-evenly;
       align-items: center;
-      flex-wrap: wrap;
-      justify-content: space-evenly; }
+      flex-wrap: wrap; }
       main .loMasVendido div div {
         width: 40vh;
         height: 70vh;
-        border: 4px solid black;
-        /*Para crear el borde de la caja*/
         margin: 30px;
-        text-align: center;
-        line-height: 37px;
+        padding: auto;
+        border: 4px solid black;
+        line-height: auto;
         background-color: black;
         color: white;
         letter-spacing: 2px;
@@ -114,14 +93,13 @@ main {
           width: 50%;
           color: black;
           padding: 4px;
-          border: 2px solid black;
           border: 3px solid rgba(56, 56, 56, 0.882);
           transition: 0.3s;
           margin-bottom: 8px; }
           main .loMasVendido div div a:hover {
             background-color: #ff8800;
             font-size: 17px;
-            border: 3px solid rgba(47, 47, 47, 0.882); }
+            border: 3px solid rgba(56, 56, 56, 0.882); }
         main .loMasVendido div div img {
           width: 100%;
           height: 80%;
@@ -139,7 +117,7 @@ main {
     main .verMas:hover {
       background-color: #ff8800;
       font-size: 21px;
-      border: 3px solid rgba(0, 0, 0, 0.882);
+      border: 3px solid black;
       color: black; }
   main .ofertas {
     text-align: center; }
@@ -148,41 +126,35 @@ main {
       color: black;
       background-color: #faa632;
       padding: 4px; }
-    main .ofertas div {
-      display: flex;
-      align-items: center;
+    main .ofertas div div {
+      width: 55vh;
+      height: 55vh;
+      margin: 30px;
+      padding: auto;
+      border: 4px solid black;
+      line-height: auto;
+      background-color: black;
+      color: white;
+      letter-spacing: 2px;
+      flex-direction: column;
       flex-wrap: wrap;
-      justify-content: center; }
-      main .ofertas div div {
-        width: 55vh;
-        height: 55vh;
-        border: 4px solid black;
-        margin: 30px;
-        text-align: center;
-        line-height: 37px;
-        background-color: black;
-        color: white;
-        letter-spacing: 2px;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: space-between; }
-        main .ofertas div div img {
-          width: 100%;
-          height: 70%;
-          border-bottom: 4px solid black; }
-        main .ofertas div div a {
-          text-decoration: none;
-          background-color: #faa632;
-          color: black;
-          padding: 4px;
-          border: 2px solid black;
-          border: 3px solid rgba(56, 56, 56, 0.882);
-          transition: 0.3s;
-          margin-bottom: 10px; }
-          main .ofertas div div a:hover {
-            background-color: #ff8800;
-            font-size: 17px;
-            border: 3px solid rgba(47, 47, 47, 0.882); }
+      justify-content: space-between; }
+      main .ofertas div div img {
+        width: 100%;
+        height: 70%;
+        border-bottom: 4px solid black; }
+      main .ofertas div div a {
+        text-decoration: none;
+        background-color: #faa632;
+        color: black;
+        padding: 4px;
+        border: 3px solid rgba(56, 56, 56, 0.882);
+        transition: 0.3s;
+        margin-bottom: 10px; }
+        main .ofertas div div a:hover {
+          background-color: #ff8800;
+          font-size: 17px;
+          border: 3px solid rgba(56, 56, 56, 0.882); }
   main .categorias {
     text-align: center; }
     main .categorias h2 {
@@ -193,6 +165,7 @@ main {
     main .categorias div {
       display: flex;
       justify-content: space-evenly;
+      align-items: center;
       flex-wrap: wrap; }
       main .categorias div div {
         display: inline-block;
@@ -205,11 +178,12 @@ main {
           height: 150px; }
         main .categorias div div h3 {
           margin: 10px;
-          letter-spacing: 2px; }
+          letter-spacing: 2px;
+          color: black; }
 
 /*---------------CONTACTO---------------*/
 main .titulo2 {
-  color: #fdfdfd;
+  color: white;
   /*Color*/
   font-size: 50px;
   /*Tamano de letra*/
@@ -260,16 +234,16 @@ main .boxProductos {
     padding: 4px; }
   main .boxProductos div div {
     display: flex;
+    justify-content: space-evenly;
     align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-evenly; }
+    flex-wrap: wrap; }
     main .boxProductos div div div {
       width: 55vh;
       height: 55vh;
-      border: 4px solid black;
       margin: 30px;
-      text-align: center;
-      line-height: 37px;
+      padding: auto;
+      border: 4px solid black;
+      line-height: auto;
       background-color: black;
       color: white;
       letter-spacing: 2px;
@@ -283,88 +257,76 @@ main .boxProductos {
         text-decoration: none;
         background-color: #faa632;
         color: black;
-        padding-left: 5px;
-        padding-right: 5px;
-        border: 2px solid black;
+        padding: 4px;
         border: 3px solid rgba(56, 56, 56, 0.882);
         transition: 0.3s;
         margin-bottom: 10px; }
         main .boxProductos div div div a:hover {
           transform: scale(1.05);
           background-color: #ff8800;
-          border: 3px solid rgba(47, 47, 47, 0.882); }
+          border: 3px solid rgba(56, 56, 56, 0.882); }
 
-main .categoriasProductos {
-  text-align: center; }
-  main .categoriasProductos h2 {
-    margin-top: 25px;
-    color: black;
-    background-color: #faa632;
-    padding: 4px; }
-  main .categoriasProductos div {
-    display: inline-block;
-    margin: 20px;
-    margin-left: 40px;
-    margin-right: 40px;
-    transition: 0.3s;
-    width: auto;
-    height: auto;
-    border: 4px solid #faa632;
-    margin: 10px;
-    text-align: center;
-    line-height: 37px;
-    background-color: rgba(250, 167, 50, 0.829);
-    display: inline-block;
-    color: black;
-    letter-spacing: 2px;
-    padding: 5px; }
-    main .categoriasProductos div a {
-      text-decoration: none;
-      color: black;
-      font-size: 20px;
-      font-weight: 900;
-      font-style: normal;
-      font-family: 'Rubik', sans-serif;
-      letter-spacing: 2px;
-      text-align: center;
-      padding: 5px; }
-    main .categoriasProductos div:hover {
-      background-color: #ff8800;
-      border: 4px solid rgba(0, 0, 0, 0.882); }
-    main .categoriasProductos div h3 {
-      margin: 10px;
-      letter-spacing: 2px; }
+main .categoriasProductos h2 {
+  margin-top: 25px;
+  color: black;
+  background-color: #faa632;
+  padding: 4px; }
 
-/*---------------SERVICIOS---------------*/
-main .servicio div {
-  display: flex;
-  flex-wrap: wrap;
+main .categoriasProductos div {
+  width: auto;
+  height: auto;
+  margin: 10px;
+  padding: 5px;
+  border: 4px solid #faa632;
+  line-height: auto;
+  transition: 0.3s;
   text-align: center;
-  justify-content: center; }
-  main .servicio div div {
-    width: 35vh;
-    height: auto;
-    border: 4px solid black;
-    margin: 30px;
-    line-height: 37px;
-    background-color: #faa632;
-    color: black;
-    letter-spacing: 2px;
-    padding: 10px;
-    transition: 0.3s; }
-    main .servicio div div:hover {
-      background-color: #ff8800;
-      border: 4px solid rgba(0, 0, 0, 0.882);
-      transform: scale(1.03); }
-  main .servicio div a {
+  background-color: #faa632;
+  color: black;
+  letter-spacing: 2px; }
+  main .categoriasProductos div a {
     text-decoration: none;
     color: black;
     font-size: 20px;
-    font-weight: 700px;
+    font-weight: 900;
     font-style: normal;
     font-family: 'Rubik', sans-serif;
     letter-spacing: 2px;
-    text-align: center; }
+    text-align: center;
+    padding: 5px; }
+  main .categoriasProductos div:hover {
+    background-color: #ff8800;
+    border: 4px solid black; }
+  main .categoriasProductos div h3 {
+    margin: 10px;
+    letter-spacing: 2px; }
+
+/*---------------SERVICIOS---------------*/
+main .servicio div div {
+  width: 35vh;
+  height: auto;
+  margin: 30px;
+  padding: 10px;
+  border: 4px solid black;
+  line-height: auto;
+  background-color: #faa632;
+  color: black;
+  letter-spacing: 2px;
+  transition: 0.3s; }
+  main .servicio div div:hover {
+    background-color: #ff8800;
+    border: 4px solid black;
+    transform: scale(1.03); }
+
+main .servicio div a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: 700px;
+  font-style: normal;
+  font-family: 'Rubik', sans-serif;
+  letter-spacing: 2px;
+  text-align: center; }
 
 /*---------------NOSOTROS---------------*/
 main .gridContainer {
@@ -429,6 +391,32 @@ main .textNosotros p {
   font-size: 20px;
   background-color: #8d8d8d;
   text-align: center; }
+
+footer {
+  background-color: #faa632;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap; }
+  footer div ul {
+    margin: 20px;
+    list-style: none; }
+  footer .botonFixed img {
+    width: 65px;
+    height: 65px;
+    position: fixed;
+    right: 15px;
+    bottom: 15px; }
+  footer .logo {
+    margin-left: 30px; }
+    footer .logo img {
+      width: 100px;
+      height: 100px; }
+  footer .redes img {
+    width: 65px;
+    height: 65px;
+    margin-right: -5px;
+    margin-left: 15px; }
 
 @media screen and (max-width: 1300px) {
   header {
