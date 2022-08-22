@@ -50,6 +50,12 @@ footer
             height: 65px;
             margin-right: -5px;
             margin-left: 15px;
+            transition: all 400ms ease;
+            cursor: pointer;
+            &:hover
+            {
+                transform: translateY(-5%);
+            }
         }
     }
 
