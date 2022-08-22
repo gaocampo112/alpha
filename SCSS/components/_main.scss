@@ -42,6 +42,14 @@ main
                 letter-spacing: 2px;
                 flex-direction: column;
                 justify-content: space-between;
+                box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+                transition: all 400ms ease;
+                cursor: default;
+                &:hover
+                {
+                    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+                    transform: translateY(-2%);
+                }
                 a /*Boton lo mas vendido*/
                 {
                     text-decoration: map-get($botonCajasAngostas , decoracion );
@@ -109,6 +117,14 @@ main
                 flex-direction: column;
                 flex-wrap: wrap;
                 justify-content: space-between;
+                box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+                transition: all 400ms ease;
+                cursor: default;
+                &:hover
+                {
+                    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+                    transform: translateY(-2%);
+                }
                 img /*Img ofertas*/
                 {
                     width:100% ;
@@ -255,6 +271,14 @@ main
                     letter-spacing: 2px;
                     flex-direction: column;
                     justify-content: space-between;
+                    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+                    transition: all 400ms ease;
+                    cursor: default;
+                    &:hover
+                    {
+                        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+                        transform: translateY(-2%);
+                    }
                     img /*Img page producto*/
                     {
                         width:100% ;

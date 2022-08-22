@@ -3,6 +3,7 @@
 *{ /*para que el navegador no me ponga margenes*/
     margin: 0; /*Del borde hacia afuera*/
     padding: 0; /*Del contendio al borde*/
+    box-sizing: border-box;
 }
 
 body /*Tipo fuente body*/

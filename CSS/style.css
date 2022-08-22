@@ -4,7 +4,8 @@
   margin: 0;
   /*Del borde hacia afuera*/
   padding: 0;
-  /*Del contendio al borde*/ }
+  /*Del contendio al borde*/
+  box-sizing: border-box; }
 
 body {
   font-family: 'Rubik', sans-serif; }
@@ -86,7 +87,13 @@ main {
         color: white;
         letter-spacing: 2px;
         flex-direction: column;
-        justify-content: space-between; }
+        justify-content: space-between;
+        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+        transition: all 400ms ease;
+        cursor: default; }
+        main .loMasVendido div div:hover {
+          box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+          transform: translateY(-2%); }
         main .loMasVendido div div a {
           text-decoration: none;
           background-color: #faa632;
@@ -138,7 +145,13 @@ main {
       letter-spacing: 2px;
       flex-direction: column;
       flex-wrap: wrap;
-      justify-content: space-between; }
+      justify-content: space-between;
+      box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+      transition: all 400ms ease;
+      cursor: default; }
+      main .ofertas div div:hover {
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+        transform: translateY(-2%); }
       main .ofertas div div img {
         width: 100%;
         height: 70%;
@@ -248,7 +261,13 @@ main .boxProductos {
       color: white;
       letter-spacing: 2px;
       flex-direction: column;
-      justify-content: space-between; }
+      justify-content: space-between;
+      box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+      transition: all 400ms ease;
+      cursor: default; }
+      main .boxProductos div div div:hover {
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+        transform: translateY(-2%); }
       main .boxProductos div div div img {
         width: 100%;
         height: 70%;
@@ -406,7 +425,11 @@ footer {
     height: 65px;
     position: fixed;
     right: 15px;
-    bottom: 15px; }
+    bottom: 15px;
+    transition: all 400ms ease;
+    cursor: pointer; }
+    footer .botonFixed img:hover {
+      transform: translateY(-3%); }
   footer .logo {
     margin-left: 30px; }
     footer .logo img {
@@ -417,6 +440,14 @@ footer {
     height: 65px;
     margin-right: -5px;
     margin-left: 15px; }
+  footer .footerUL li {
+    transition: 0.3s; }
+    footer .footerUL li a {
+      text-decoration: none;
+      color: black;
+      font-size: medium; }
+    footer .footerUL li:hover {
+      transform: scale(1.1); }
 
 @media screen and (max-width: 1300px) {
   header {
@@ -428,7 +459,7 @@ footer {
     text-align: center; } }
 
 @media screen and (max-width: 770px) {
-  main .botonFixed {
+  footer .botonFixed {
     display: none; } }
 
 @media screen and (max-width: 1245px) {

@@ -23,6 +23,12 @@ footer
             position: fixed;
             right: 15px;
             bottom: 15px;
+            transition: all 400ms ease;
+            cursor: pointer;
+            &:hover
+            {
+                transform: translateY(-3%);
+            }
         }
     }
 
@@ -44,6 +50,24 @@ footer
             height: 65px;
             margin-right: -5px;
             margin-left: 15px;
+        }
+    }
+
+    .footerUL
+    {
+        li
+        {
+            transition: 0.3s;
+            a
+            {
+                text-decoration: none;
+                color: nth($colores, 4 );
+                font-size: medium;
+            }
+            &:hover
+            {
+                transform: scale(1.1);
+            }
         }
     }
 }
